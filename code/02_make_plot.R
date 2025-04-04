@@ -1,7 +1,7 @@
 here::i_am("code/02_make_scatter.R")
 
 data <- readRDS(
-  file = here::here("output/table.rds")
+  file = here::here("output/data_clean.rds")
 )
 
 library(ggplot2)
@@ -29,7 +29,8 @@ series_plot <- ggplot(data, aes(x = Time, y = heart_rate, color = activityID)) +
 ggsave(
   here::here("output/series_plot.png"),
   plot = series_plot,
-  device = "png"
+  device = "png",
+  bg = "white"
 )
 
 
