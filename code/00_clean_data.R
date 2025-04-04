@@ -5,6 +5,7 @@ dataset <- dataset[dataset$activityID %in% c("lying", "sitting", "standing", "wa
 library(dplyr)
 
 dataset <- dataset %>%
+  select(heart_rate, activityID) %>%
   group_by(activityID) %>%
   mutate(Time = row_number()) %>%
   ungroup()
