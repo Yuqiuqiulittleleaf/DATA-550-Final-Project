@@ -1,4 +1,4 @@
-here::i_am("code/Final_Project_RMarkdown.Rmd")
+here::i_am("Final_Project_RMarkdown.Rmd")
 absolute_path_to_data <- here::here("data", "filtered_data.csv")
 dataset <- read.csv(absolute_path_to_data)
 dataset <- dataset[dataset$activityID %in% c("lying", "sitting", "standing", "walking"), ]
