@@ -9,6 +9,6 @@ dataset <- dataset %>%
   mutate(Time = row_number()) %>%
   ungroup()
 saveRDS(
-  data, 
+  dataset, 
   file = here::here("output/data_clean.rds")
 )

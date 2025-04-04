@@ -7,10 +7,9 @@ data <- readRDS(
 library(labelled)
 library(gtsummary)
 
-var_label(data) <- list(
-  activityID = "Name of Activity",
-  heart_rate = "Heart Rate",
-  hand.temperature...C. = "Hand Temperature (°C)")
+var_label(data$activityID) <- "Name of Activity"
+var_label(data$heart_rate) <- "Heart Rate"
+var_label(data$hand.temperature...C.) <- "Hand Temperature (°C)"
 
 table <- data |>
   select("activityID", "heart_rate", "hand.temperature...C.") |>
