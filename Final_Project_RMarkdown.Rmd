@@ -25,7 +25,7 @@ I made a table to show the variation of the interested variables between differe
 ```{r, load-data}
 here::i_am("Final_Project_RMarkdown.Rmd")
 data <- readRDS(
-  file = here::gihere("output/data_clean.rds")
+  file = here::here("output/data_clean.rds")
 )
 ```
 
