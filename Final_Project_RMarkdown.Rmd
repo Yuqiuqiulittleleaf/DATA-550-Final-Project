@@ -39,7 +39,7 @@ This table provides a summary of the distribution of heart rate and hand tempera
 table <- readRDS(
   file = here::here("output/table.rds")
 )
-kable(table)
+table
 ```
 
 ## Figure analysis
