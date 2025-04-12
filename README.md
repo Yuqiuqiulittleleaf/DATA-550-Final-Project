@@ -50,3 +50,20 @@ Run the following command in your terminal:
 
 ```bash
 make
+
+### 2. **Synchronize project environment**
+
+Run the following command in your terminal:
+
+```bash
+make install
+
+---
+## How to Download the data
+
+Run the following command in your terminal:
+
+```bash
+brew install git-lfs
+git lfs install
+git lfs pull
