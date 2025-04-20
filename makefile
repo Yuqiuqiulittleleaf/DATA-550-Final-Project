@@ -1,8 +1,8 @@
 report:
 	mkdir -p mounted
 	docker run --rm \
-		-v "$$PWD:/home/rstudio/project" \
-		-v "$$PWD/mounted:/home/rstudio/project/final_report" \
+		-v "$$(pwd):/home/rstudio/project" \
+		-v "$$(pwd)/mounted:/home/rstudio/project/final_report" \
 		yuqiuqiulittleleaf/final-project:latest
 
 Final_Project_RMarkdown.html: Final_Project_RMarkdown.Rmd code/03_render_report.R
