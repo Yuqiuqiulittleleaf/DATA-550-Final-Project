@@ -1,10 +1,9 @@
 report:
 	mkdir -p mounted
-	docker run --rm \
-	  --platform=linux/amd64 \
-		-v "$$(pwd):/home/rstudio/project" \
-		-v "$$(pwd)/mounted:/home/rstudio/project/final_report" \
+	docker run --rm -it \
+		-v /"$$(pwd)/mounted":/home/rstudio/project/final_report \
 		yuqiuqiulittleleaf/final-project:latest
+
 
 Final_Project_RMarkdown.html: Final_Project_RMarkdown.Rmd code/03_render_report.R
 	Rscript code/00_clean_data.R

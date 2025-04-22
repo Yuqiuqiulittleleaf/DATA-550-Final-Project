@@ -43,4 +43,4 @@ RUN mkdir -p code output data final_report
 COPY data/filtered_data.csv ./data/filtered_data.csv
 
 COPY code ./code
-ENTRYPOINT sh -c "make && cp Final_Project_RMarkdown.html final_report/"
+CMD make Final_Project_RMarkdown.html && mv Final_Project_RMarkdown.html final_report 
