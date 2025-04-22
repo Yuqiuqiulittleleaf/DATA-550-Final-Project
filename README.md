@@ -49,7 +49,7 @@ To generate the final report (`Final_Project_RMarkdown.html`), follow these step
 Run the following command in your terminal:
 
 ```bash
-make
+make report
 ```
 
 ### 2. **Synchronize project environment**
