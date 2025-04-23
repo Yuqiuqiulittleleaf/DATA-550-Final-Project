@@ -36,7 +36,7 @@ COPY --from=base /home/rstudio/project .
 
 #ENV WHICH_CONFIG=default
 
-COPY makefile .
+COPY Makefile .
 COPY Final_Project_RMarkdown.Rmd .
 
 RUN mkdir -p code output data final_report
