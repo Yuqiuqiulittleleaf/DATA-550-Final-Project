@@ -52,6 +52,13 @@ Run the following command in your terminal:
 make report
 ```
 
+However, if you are using a Mac computer,
+please run the following command in your terminal:
+
+```bash
+make Macreport
+```
+
 ### 2. **Synchronize project environment**
 
 Run the following command in your terminal:
